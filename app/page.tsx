@@ -37,9 +37,12 @@ ${vibe === "Funny" ? "- Make them humorous." : ""}
 
 
   const generateBio = async (e:any) => {
+    if(!bio){
+      return toast("Please enter your job or hobby", {icon : "✍️"});
+    }
     e.preventDefault()
     setLoading(true)
-  console.log("Calling the Gemini API");
+  console.log("Calling the Gemini API" );
 
 
   const APIBody = {
