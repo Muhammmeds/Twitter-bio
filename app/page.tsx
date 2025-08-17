@@ -96,7 +96,7 @@ ${vibe === "Funny" ? "- Make them humorous." : ""}
           Generate your next Twitter bio using AI
         </h1>
         <div className="mt-7">
-            <Image src="/gemini.png" width={120} height={120} alt="gemini icon"  />
+            <Image src="/gemini.png" width={120} height={50} alt="gemini icon"  />
         </div>
 
         <div className="max-w-xl w-full">
