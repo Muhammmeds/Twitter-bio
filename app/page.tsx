@@ -7,7 +7,6 @@ import DropDown from "../components/DropDown";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import LoadingDots from "../components/LoadingDots";
-import Toggle from "../components/Toggle";
 import { countries,vibes } from "./data/data";
 
 export default function Home() {
@@ -16,7 +15,6 @@ export default function Home() {
   const [vibe, setVibe] = useState<string>("Professional");
   const [ country , setCountry] = useState<string>("Pick Location");
   const [generatedBios, setGeneratedBios] = useState<string>("");
-  const [isLlama, setIsLlama] = useState(false);
 
   const bioRef = useRef<null | HTMLDivElement>(null);
 
@@ -98,7 +96,7 @@ ${vibe === "Funny" ? "- Make them humorous." : ""}
           Generate your next Twitter bio using AI
         </h1>
         <div className="mt-7">
-          <Toggle isGPT={isLlama} setIsGPT={setIsLlama} />
+            <Image src="/gemini.png" width={120} height={120} alt="gemini icon"  />
         </div>
 
         <div className="max-w-xl w-full">
